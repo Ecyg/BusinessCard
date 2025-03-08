@@ -1,5 +1,13 @@
 package com.example.businesscard
 
+/*
+TO DO
+* Add Row Composables to Text Composables for Icons
+* Add QR Code leading to my LinkedIn
+* Replace all strings with strings.xml
+
+ */
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent

@@ -97,13 +97,28 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     // If you want, you can add rows to adds icons to each text composable
     // Also add padding between the text composables
     Column(modifier = Modifier
+        .padding(16.dp)
         .fillMaxSize(),
         verticalArrangement = Arrangement.Bottom,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "832-454-3882", color = textColor, textAlign = TextAlign.Center)
-        Text(text = "@Ecyg", color = textColor, textAlign = TextAlign.Center)
-        Text(text = "matthew.ke.moore@gmail.com", color = textColor, textAlign = TextAlign.Center)
+        Text(
+            text = "832-454-3882",
+            color = textColor,
+            textAlign = TextAlign.Center
+        )
+        Text(
+            text = "@Ecyg",
+            color = textColor,
+            textAlign = TextAlign.Center
+        )
+        Text(
+            text = "matthew.ke.moore@gmail.com",
+            color = textColor,
+            textAlign = TextAlign.Center,
+            modifier = Modifier
+                .padding(bottom = 20.dp)
+        )
     }
 
 }

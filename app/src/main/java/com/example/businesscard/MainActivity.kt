@@ -57,9 +57,9 @@ val textColor:Color = Color.White
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
 
+
     Box (
-        modifier = Modifier
-            .fillMaxSize(),
+        modifier = Modifier,
         contentAlignment = Alignment.Center
     ){
         Image(
@@ -69,6 +69,22 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxSize()
         )
+
+        Box (
+            contentAlignment = Alignment.TopStart,
+            modifier = Modifier
+                .align(Alignment.TopCenter)
+        ){
+            Image(
+                painter = painterResource(R.drawable.linkedin),
+                contentDescription = "QR Code",
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .size(200.dp)
+
+
+            )
+        }
 
         Column (modifier = Modifier
             .padding(16.dp)
